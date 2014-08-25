@@ -1,0 +1,801 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    min-height: 724px;
+}
+
+#headWhyReg{
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+    word-wrap:break-word;
+    position: absolute;
+    margin-left: 270px;
+    margin-top: 34px;
+    z-index: 9999;
+}
+#fundraising{
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+    word-wrap:break-word;
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 34px;
+    z-index: 9999;
+}
+#fundraisings{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    word-wrap:break-word;
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 34px;
+    z-index: 9999;
+}
+
+#buttonTableDiv{
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+    word-wrap:break-word;
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 34px;
+    z-index: 9999;
+    
+}
+#leftButton{
+    width: 20%;
+    height:53px;
+    float: left;
+    margin-left: 16%;
+}
+#centerButton{
+    width: 26%;
+    height:53px;
+    float: left;
+    margin-left:1%;
+    margin-right:1%;
+}
+#rightButton{
+    width: 20%;
+    height:53px;
+    float: right;
+    margin-right:16%;
+}
+
+
+
+#singleButton{
+    width: 20%;
+    height:53px;
+    float:left;
+    margin-left:40%;
+}
+
+/*Table data style for 3 app store links */
+table#store_links {
+	width:100%;
+}
+table#store_links td {
+	width:33%;
+}
+#store_links div {
+	width:45%;
+	margin:0 auto 0 auto;
+}
+
+/*position img links within table */
+#iosLink{
+    height:70px;
+    float:right;
+}
+#windowsLink {
+	height:70px;
+}
+#AndroidLink{
+	float:left;
+    height:70px;
+}
+
+
+
+#leftButtonS{
+    width: 26%;height:53px;float: left;margin-left: 10%;
+}
+#rightButtonS{
+    width: 26%;height:53px;float: right;margin-right:10%;
+}
+
+
+
+
+
+#headWhatIsPP{
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+    word-wrap:break-word;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 34px;
+    z-index: 9999;
+}
+#headWhatIsPPs{
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+    word-wrap:break-word;
+    position: absolute;
+    margin-left: 230px;
+    margin-top: 34px;
+    z-index: 9999;
+}
+#headWhatIsS{
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+    word-wrap:break-word;
+    position: absolute;
+    margin-left: 185px;
+    margin-top: 34px;
+    z-index: 9999;
+}
+#votered{
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+    word-wrap:break-word;
+    position: absolute;
+    margin-left: 255px;
+    margin-top: 34px;
+    z-index: 9999;
+}
+#votereds{
+    font-size: 23px;
+    color: #fff;
+    text-align: center;
+    word-wrap:break-word;
+    position: absolute;
+    margin-left: 190px;
+    margin-top: 34px;
+    z-index: 9999;
+}
+
+
+
+#headerImage{
+    width: 590px;
+    margin: 0 auto;    
+}
+#uniqueGameImage{
+    width: 70%;
+    margin: 10px auto;
+    /*float: center;        Not valid*/
+    
+}
+#spacer{
+    width: 590px;
+    margin: 30px auto;    
+}
+#headerlanguage{
+    /*    width: 420px;
+        margin: 0 auto;*/
+    float: right;
+    margin-top: -3%;
+    margin-right: 30px;
+}
+@media (max-width:881px) and (min-width:604px){
+    #headerlanguage{
+        margin-top: 25px;
+        float: none;
+        width: 117px;
+        margin: 0 auto;
+    }
+}
+#usertypediv{
+    width: 590px;
+    margin: 0 auto;
+    height: 500px;
+    margin-top: 4%;
+    background-image:url('../img/select_party_box copy.png');
+    background-repeat:no-repeat;
+    background-size:contain
+}
+#candidatediv{
+    float: left;
+    height: 500px;
+    width: 48%;
+}
+#candidateimg,#donorimg{
+    max-width: 100%; 
+    height: auto;
+}
+#donordiv{
+    width: 48%;
+    height:500px;
+    float: right;
+    margin-right:3%;
+}
+#copyright{
+    text-align: center;
+    font-style: italic; 
+    color: white;
+}
+
+
+/*css for candidate signup page */
+#candidateregdiv{
+    background-image:url('../img/candidate_regis_bg.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    height: 782px;
+    margin: 0 auto;
+    width: 72px;
+    margin-top: 45px;
+}
+#regdata{
+    margin-top: 8%;
+    position: absolute;
+    margin-left: 3%;
+}
+.spanlabels{
+    font-family: bold;
+    font-size: 18px;
+    width: 145px;
+    /*    line-height: 50px;*/
+}
+.regtexts{
+    background:url(../img/text_box.png);
+    background-repeat:no-repeat;
+    background-size: 310px 33px;
+    /* outline: none; */
+    width: 298px !important ;
+    height: 25px !important;
+    border-radius: 15px !important;
+    text-align: center;
+    font-family: regular;
+    color:#797979 !important;
+    font-size:18px !important;
+}
+#creditcardimg{
+    width: 20%;
+    margin-top: 100%;
+    margin-left: 279px;
+}
+
+
+/*css for candidate signup option page */
+
+#candidateoptiondiv{
+    background-image:url('../img/candidate_login_bg.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    height: 340px;
+    margin: 0 auto;
+    width: 590px;
+    margin-top: 50px;
+}
+
+#candiloginoptions{
+    margin-top: 90px;
+    position: absolute;
+    margin-left: 20px;
+}
+/*css for campaign details page */
+#campaigndiv{
+    background-image:url('../img/candidate_regis_bg.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    height: 650px;
+    margin: 0 auto;
+    width: 590px;
+    margin-top:45px;
+}
+#campaigndata{
+    width:500px;
+    height: 200px;
+    margin-top: 110px;
+    position: absolute;
+    margin-left: 48px;
+}
+#editbackimg{
+    width:42px;
+    height: 30px;
+}
+#campaignBack{
+    width:282px;
+    height: 100px;
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 48px;     
+}
+#donationdetail{
+    background-image:url('../img/donation_box.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 382px;
+    margin-top: 180px;
+    position: absolute;
+    margin-left: 46px;
+}
+#candidatelistdiv{
+    background-image:url('../img/my_candidates_bg.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    min-height: 475px;
+    margin: 0 auto;
+    width: 712px;
+    margin-top: 45px;
+    background-size: cover;
+}
+#candidateregisterdiv{
+    background-image:url('../img/campaign_fund_bg.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    min-height: 785px;
+    margin: 0 auto;
+    width: 712px;
+    margin-top: 45px;
+    background-size: cover;
+}
+#votereddiv{
+    background-image:url('../img/voter_education_bg.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    min-height: 585px;
+    margin: 0 auto;
+    width: 712px;
+    margin-top: 45px;
+    background-size: cover;
+}
+
+
+/*css for candidate login page */
+#candidatelogindiv{
+    background-image:url('../img/candidate_login_bg.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    height: 340px;
+    margin: 0 auto;
+    width: 590px;
+    margin-top: 50px;
+}
+
+#candidatelogindata{
+    margin-top: 100px;
+    position: absolute;
+    margin-left: 20px;
+    width: inherit;
+}
+#whyReg{
+    max-width:618px;
+    text-align: justify;
+    /*margin-top: 8%;*/
+    position: absolute;
+    /*    margin-left: 3%;*/
+    margin-left:100px;
+    margin-top:95px;
+    overflow:  auto;
+    max-height: 892px;
+    /* border: 1px solid; */
+    /*width:620px;*/
+}
+#whyRegNoScroll{
+    max-width:518px;
+    text-align: justify;
+    /*margin-top: 8%;*/
+    position: absolute;
+    word-wrap: normal;
+    /*    margin-left: 3%;*/
+    margin-left:100px;
+    margin-top:95px;
+    overflow:  visible;
+    max-height: 992px;
+    /* border: 1px solid; */
+    /*width:620px;*/
+}
+#whyRegNoScrolls{
+    max-width:518px;
+    text-align: justify;
+    /*margin-top: 8%;*/
+    position: absolute;
+    word-wrap: normal;
+    /*    margin-left: 3%;*/
+    margin-left:100px;
+    margin-top:78px;
+    overflow:  visible;
+    max-height: 992px;
+    /* border: 1px solid; */
+    /*width:620px;*/
+}
+.quest{
+    font-weight: bold;
+    font-size: 16px;
+    color: #444;
+    margin: 10px;
+    z-index: 9999;
+}
+.contentData{
+    font-size: 16px;
+    color: #444;
+    margin: 10px;
+    z-index: 9999;
+}
+
+
+/*css for candidate donor loginpage */
+
+#donorlogindiv{
+    background-image:url('../img/candidate_login_bg.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    height: 340px;
+    margin: 0 auto;
+    width: 590px;
+    margin-top: 50px;
+}
+
+#donorlogindata{
+    margin-top: 108px;
+    position: absolute;
+    margin-left: 20px;
+}
+
+#alreadylogindiv{
+    background-image: url('../img/select_party_box.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 395px;
+    margin: 0 auto;
+    width: 574px;
+    margin-top: 50px;
+}
+
+/*css for candidate donor signup page */
+
+#donorregdiv{
+    background-image:url('../img/donor_signup_box.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    height: 500px;
+    margin: 0 auto;
+    width: 590px;margin-top:50px;
+}
+
+/* for responsive*/
+@media only screen
+and (max-width : 1000px) {
+    body{
+        min-height: 779px;
+    }
+}
+
+/* for responsive*/
+@media only screen
+and (max-width : 603px) {
+    #headerImage{
+        width: 350px;
+    }
+    #headerlanguage{       
+        margin-top: 22px;
+        float: none;
+        width: 117px;
+        margin: 0 auto;
+    }
+    #headerlanguageImg{
+        margin-left: 30px;
+        width: 25%;
+    }
+    #headerlanguageImg1{
+        width: 25%;
+    }
+    #usertypediv{
+        width: 350px;
+        margin-top:15%;
+    }
+    #usertypediv p{
+        margin-top:15px !important;
+    }
+    #candidateregdiv{
+        width: 350px;
+    } 
+    #indexlogin{
+        margin-top: -5%;
+        font-size: 80%;
+    }
+    #candidatediv{
+        float: left;height: 500px;width: 48%;
+        font-size: 90%;
+    }
+    #donordiv{
+        width: 48%;height:500px;float: right;margin-right:3%;
+        font-size: 90%;
+    }
+    .quest{
+        font-weight: bold;
+        font-size: 12px;
+        color: #444;
+        margin: 10px;
+        z-index: 9999;
+    }
+    .contentData{
+        font-size: 12px;
+        color: #444;
+        margin: 10px;
+        z-index: 9999;
+    }
+    #donorlogindata{
+        margin-top: 108px;
+        position: absolute;
+        margin-left: 60px;
+    }
+}
+
+@media only screen
+and (max-width : 733px)  and (min-width:604px){
+    #candidateregdiv{
+        width: 580px;
+    }
+    #whyReg{
+        max-width:510px;
+        text-align: justify;
+        position: absolute;
+        overflow: auto;
+        max-height: 600px;
+    }
+    #creditcardimg {
+        width: 17%;
+        margin-top: 101%;
+        margin-left: 245px;
+    }
+}
+
+/* for responsive compaign screen*/
+@media only screen
+and (max-width : 603px) {
+    #campaigndiv{
+        width: 380px;
+        background-size: 100% 100%;
+    }
+    #campaigndiv p{
+        margin-left: 125px !important;
+        font-size: 16px !important;
+        margin-top: 28px !important;
+    }
+    #candidatenameedit
+    {
+        width: 150px !important;
+        height: 11px !important;
+    }
+    #campaigndata{
+        width: 250px !important;
+        margin-top: 65px !important;
+    }
+    #editprofileimg{
+        width: 30% !important;
+    }
+    #editbackimg{
+        margin-left: -11%;
+        width: 10% !important;
+    }
+    #donationdetail{
+        width: 325px !important;
+        margin-top: 139px !important;
+        margin-left: 28px !important;
+        background-size: 100% 100%;
+    }
+
+    #donationdata{
+        margin-top: 18% !important;
+    }
+    #donationdetail p{
+        margin-left:62px  !important;
+    }
+    #savecampaign{
+        margin-left:160px  !important;
+        margin-top: 157.5% !important;
+    }
+    #whyReg{
+        max-width:324px;
+        text-align: justify;
+        /*margin-top: 8%;*/
+        position: absolute;
+        /*margin-left: 3%;*/
+        margin-left:11px;
+        margin-top:43px;
+        overflow: auto;
+        max-height: 276px;
+        /*border: 1px solid;*/ 
+        /*width:620px;*/
+    }
+
+}
+
+    #whyReg{
+        max-width:510px;
+        text-align: justify;
+        position: absolute;
+        overflow: auto;
+        max-height: 459px;
+    }
+    
+    
+/* for responsive candidate login */
+@media only screen
+and (max-width : 603px) {
+    #candidatelistdiv{
+        width:350px !important;
+        background-size: 100% 100%;
+    }
+    #candidatelistdiv p{
+        font-size: 18px !important;
+        margin-top: 30px !important;
+        margin-left: 118px !important;
+    }
+    #candidatelogindiv{
+        width:350px !important;
+        background-size: 100% 100%;
+    }
+    #candidatelogindata{
+        margin-left: -59px;
+        margin-top:98px !important;
+    }
+    #candidatelogindiv p{
+        font-size: 18px !important;
+        margin-top: 30px !important;
+        margin-left: 118px !important;
+    }
+    span.spanlabels{
+        width:189px !important;
+        /*line-height: 30px !important;*/
+    }
+    .regtexts{
+        width: 185px !important;
+        height: 15px !important;
+        background-size: 300px 48px;
+    }
+    #campaignsaveimg{
+        margin-left:0px !important;
+        /*        margin-top:83% !important;*/
+    }
+}
+/*css for candidate signup option  responsive page */
+@media only screen
+and (max-width : 603px) {
+    #candidateoptiondiv{
+        width:380px;
+        height:225px;
+    }
+    #candidateoptiondiv p{
+        font-size: 18px !important;
+        margin-left: 150px !important;
+        margin-top: 17px !important;
+    }
+
+    #candiloginoptions{
+        width: 143px !important;
+        margin-top: 60px !important;
+        position: absolute !important;
+        margin-left: 148px !important;
+    }
+    #candiloginoptions img{
+        width: 55% !important;
+        margin-left:0px !important;
+    }
+}
+
+
+/* for responsive donor login options*/
+
+@media only screen
+and (max-width : 603px) {
+    #donorloginoptdiv{
+        width:380px !important;
+        height:230px !important;
+    }
+    #donorloginoptdiv p{
+        font-size: 18px !important;
+        margin-left: 140px !important;
+        margin-top: 17px !important;
+    }
+
+    #donorloginopt{
+        width: 143px !important;
+        margin-top: 62px !important;
+        position: absolute !important;
+        margin-left: 148px !important;
+    }
+    #donorloginopt img{
+        width: 60% !important;
+        margin-left:0px !important;
+    }
+    #signupimg{
+        margin-left: 160px!important;
+    }
+}
+
+
+
+/* for responsive donor signup screen*/
+
+@media only screen
+and (max-width : 1106px) {
+    #regdata{
+        margin-top:85px !important;
+    }
+}
+@media only screen
+and (max-width : 603px) {
+    #donorregdiv{
+        width:380px !important;
+        margin-top:13px !important;
+        background-size: 100% 100%;
+    }
+    #donorregdiv p{
+        font-size: 18px !important;
+        margin-left: 130px !important;
+        margin-top: 29px !important;
+    }
+    .spanlabels{
+        font-size: 12px !important;
+        width: 95px !important;
+    }
+    .regtexts {
+        width: 243px !important;
+        height: 22px !important;
+    }
+    #regdata{
+        margin-left: 8% !important;
+        margin-top: 12% !important;
+    }
+    #donorsignup img{
+        width: 20% !important;
+        margin-top: 119% !important;
+    }
+    /*    #myModal{
+            margin: 0 auto;
+            width: 300px;
+            margin-left: -150px;
+        }*/
+}
+/* for responsive donor signin screen*/
+@media only screen
+and (max-width : 603px) {
+    #donorlogindiv{
+        width:380px !important;
+        background-size: 100% 100%;
+    }
+    #donorlogindiv p{
+        font-size: 17px !important;
+        margin-left: 148px !important;
+        margin-top: 29px !important;
+    }
+    #donorlog{
+        margin-left:166px !important;
+        margin-top: 78% !important;
+    }
+    #donorlogindata{
+        margin-top: 100px !important;
+    }
+    #alreadylogindiv{
+        width:380px !important;
+        background-size: 100% 100%;
+    }
+
+}
+@font-face
+{
+    font-family:bold;
+    src: url('fonts/MerriweatherSans-Bold.ttf');
+}
+@font-face
+{
+    font-family:regular;
+    src: url('fonts/MerriweatherSans-Regular.ttf');
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Party Punchout!</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <link rel="stylesheet" href="../css/bootstrap.css" />
+        <link rel="stylesheet" href="../css/styles.css" />
+        
+        <!-- include libraries/variables, jQuery CDN for speed -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!--Main page functions-->
+        <script type="text/javascript" src="../js/loadPage.js"></script>
+        
+        <style>
+            body {
+            	background-image: url('../img/website_bg.jpg');
+            	background-repeat: no-repeat;
+            	background-size: cover;
+            	margin: 0;
+            	padding: 0;
+            	min-height: 750px;
+            }
+            
+            #pDonor {
+                margin: 0 0 30px;
+                line-height:170%;
+                font-size: 150%;
+            }
+            .BHover{                
+                position: absolute;
+                margin-top: -170px;
+                width: 60%;
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+                text-outline: 2px 2px blue;
+                background: black;
+                height: 171px;
+                width: 170px;
+                border-radius: 30px;
+                opacity: 0.5;
+                display: none;
+                cursor: pointer;
+            }
+            .BtnHoverP{
+                color: white;
+                margin-top: 60px;
+                z-index: 9999;
+                opacity: 1;
+                line-height: 1.5;
+            }
+            .BtnHoverP2{
+                color: white;
+                margin-top: 46px;
+                z-index: 9999;
+                opacity: 1;
+                line-height: 1.5;
+            }
+            /* for responsive*/
+            @media only screen
+            and (max-width : 603px) {
+                #pDonor {
+                    margin: 0 0 28px;
+                    line-height: 150%;
+                    font-size: 110%;
+                }
+                #usertypediv p {
+                    margin-top: 36px !important;
+                }
+                .BHover{                
+                    margin-top: -101px;
+                    font-size: 12px;
+                    height: 100px;
+                    width: 101px;
+                    border-radius: 21px;
+                }
+                .BtnHoverP{
+                    color: white;
+                    margin-top: 32px;
+                    z-index: 9999;
+                    opacity: 1;
+                    line-height: 1.5;
+                }
+                .BtnHoverP2{
+                    color: white;
+                    margin-top: 25px;
+                    z-index: 9999;
+                    opacity: 1;
+                    line-height: 1.5;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <div>
+                <table>
+                    <tr>
+                        <td style="height: 50px;">
+                            
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+               <div align="center"><img src='../img/splash_screen_no_corners.png' style="width: 80%;"></div>
+            </div>
+             
+             
+             
+             
+             
+            <div id="candidatelistdiv">
+                <div id="headWhatIsPP">
+                    WHAT IS PARTY PUNCHOUT?
+                </div>
+                <div id="whyReg" >
+                    <p class="quest">
+                        Welcome to Party Punchout..  a new and innovative concept in mobile gameplay!
+                    </p>
+                    <p class="contentData">
+                        This groundbreaking game combines 3 elements not previously seen together in a single mobile app&#133;
+                    </p>
+                    <p class="contentData">
+                        
+                    </p>
+                    <p class="contentData">
+                        &#149;  It&#39;s an addictively fun point-and-shoot racing game&#133; how well do you know your political issues??
+                    </p>
+                    <p class="contentData">
+                        &#149;  It&#39;s a free, and easy, fundraising & name recognition resource for political campaigns at every level, from local Congressional districts all the way up to the Presidential level.
+                    </p>
+                    <p class="contentData">
+                        &#149;  It aims (pun intended!) to increase political engagement and awareness.
+                    </p>
+                </div>
+            
+            </div>
+        </div>
+            
+            <p style="clear:both;">
+                
+            </p>
+            
+            
+            
+        <div>
+            <div id="leftButton">
+                <a href="a_unique_game.html">
+                    <img id='campaignsaveimg' src="../img/btns/a_unique_game.png" alt="a unique game - button">
+                </a>
+            </div>
+            <div id="centerButton">
+                <a href="campaign_fundraising.html">
+                    <img id='campaignsaveimg2' src="../img/btns/campaign_fundraising.png" alt="campaign fundraising - button">
+                </a>
+            </div>
+            <div id="centerButtonR">
+                <a href="video_contest.php">
+                    <img id='videoContest' src="../img/btns/" alt="Video contest">
+                </a>
+            </div>
+            <div id="rightButton">
+                <a href="voter_education.html">
+                    <img id='campaignsaveimg3' src="../img/btns/voter_education.png" alt="voter education - button">
+                </a>
+            </div>
+        </div>
+                
+                
+        <p style="clear:both;">
+                
+        </p>
+                   
+        <div>
+        	<table id="store_links">
+        		<tr>
+        			<td>
+			            <div id="iosLink">
+			                <a target="_blank" href="https://itunes.apple.com/in/app/party-punchout/id870381762?mt=8">
+			                    <img id='iosImg' src="../img/download_ios.png" alt="Get app for IOS">
+			                </a>
+			            </div>
+			        </td>    
+		            <td>
+			            <div id="windowsLink">
+			                <a target="_blank" href="http://www.windowsphone.com/en-us/store/app/partypunchout/06824de9-9d91-41e1-b679-6c0840488899" >
+			                    <img id='windowsImg' src="../img/download_windows.png" alt="Get app for Windows Phone">
+			                </a>
+			            </div>
+		            </td>
+		            <td>
+			            <div id="AndroidLink">
+			                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.jeff.partypunchout&hl=en">
+			                    <img id='AndroidImg' src="../img/download_android.png" alt="Get app for Android" />
+			                </a>
+			            </div>
+		            </td>
+	            </tr>
+            </table>
+        </div>
+             
+            
+            <p style='clear:both;'>
+            </p>
+            <p style='clear:both;'>
+            </p>
+                        
+             
+             
+        <div id="headerlanguage">
+                    <a href="index.html"><img id="headerlanguageImg" src="../img/btns/en2.png" alt="English"></a>
+                    <a href="../spanish/index.html"><img id="headerlanguageImg1" src="../img/btns/es1.png" alt="Spanish"></a>
+        </div>
+             
+             
+             
+             
+             
+            <p style='clear:both;'>
+            </p>
+        <div id="copyright"><br /><br />
+            Copyright &copy; 2014 - Party Punchout &#153;
+        </div>
+        
+        <div>
+                <table>
+                    <tr>
+                        <td style="height: 20px;">
+                            
+                        </td>
+                    </tr>
+                </table>
+        </div>
+ 
+    </body>
+</html>
