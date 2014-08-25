@@ -1,0 +1,47 @@
+            <style>
+                #splash {
+                    /*background-color: #000000;*/
+                    background-image: url('img/splash/party_punchout_website_splash.png');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    position: fixed;
+                    top: 0; right: 0; bottom: 0; left: 0;
+                    /*z-index: 99999;*/
+                }
+                #loader {
+                    /*background-color: #000000;*/
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    position: fixed;
+                    height: 80px;
+                    width: 80px;
+                    background: transparent;
+                    top: 49%; 
+                    right: 47%; bottom: 47%; left: 47%;
+                    align: center;
+                    opacity: 0.8;
+                    z-index: 99999;
+                }
+            </style>
+            <script>
+                language = '0';
+                setInterval(function() {
+                    console.log(language);
+                    if (language == 1) {
+                        window.location.href = "spanish/index.html";
+                    } else {
+                        window.location.href = "english/index.html";
+                    }
+                }, 1500);
+            </script>
+        </head>
+        <body>
+
+            <div id="splash"></div>
+        <center>
+            <div><img id="loader" src="img/splash/loading.gif"></div>
+        </center>
+        </body>
+</html>

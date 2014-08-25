@@ -5,12 +5,22 @@
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <link rel="stylesheet" href="../css/bootstrap.css" />
         <link rel="stylesheet" href="../css/styles.css" />
-        <!-- include libraries/variables -->
-        <script src="js/jquery-1.11.0.js"></script>
+        
+        <!-- include libraries/variables, jQuery CDN for speed -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!--Main page functions-->
+        <script type="text/javascript" src="../js/loadPage.js"></script>
+
         <style>
-            
-            
-            
+            body {
+            	background-image: url('../img/website_bg.jpg');
+            	background-repeat: no-repeat;
+            	background-size: cover;
+            	margin: 0;
+            	padding: 0;
+            	min-height: 750px;
+            }
             
             #pDonor {
                 margin: 0 0 30px;
@@ -83,17 +93,14 @@
         </style>
     </head>
 
-    <body background='../img/website_bg.jpg' style='background-repeat: no-repeat;background-size: cover;margin: 0;padding: 0;min-height: 750px;'>
+    <body>
         <div id="container">
                 
             <div>
                 <div id="headerImage">
                     <img src="../img/website_header.png" alt="Party Punchout image">
                 </div>
-                <div id="headerlanguage">
-                    <a href="a_unique_game.html"><img id="headerlanguageImg" src="../img/btns/en2.png" alt="English"></a>
-                    <a href="../spanish/a_unique_game.html"><img id="headerlanguageImg1" src="../img/btns/es1.png" alt="Spanish"></a>
-                </div>
+                
                 <div style="clear:both;">
                     
                 </div>
@@ -101,34 +108,7 @@
             <div id="uniqueGameImage">
                 <img src="../img/unique_game.png" alt="Screenshot collage">
             </div>
-<!--                <div id='candidatediv'>
-                    <p id="pDonor" style='font-family: bold;color: #363435;text-align: center;margin-top: 65px;word-wrap:break-word'>Are you a <br/> Candidate?</p>
-                    <div id='candidateimg' class="selectParty" style="width: 60%;margin-left: 23%;">
-                        <img id="candImg1" src="img/btns/why_register_candidates_bg.png" alt="Candidate image">
-                        <div id="BtnHover" class="BHover"><div class="BtnHoverP">WHY <br/> REGISTER?</div></div>
-                    </div>
-
-                    <div id="indexlogin">
-
-                    </div>
-                </div>
-                <div id='donordiv'>
-                    <p id="pDonor" style='font-family: bold;color: #363435;text-align: center;margin-top: 65px;word-wrap:break-word'>Just playing <br/> the game?</p>
-                    <div id='donorimg' class="selectParty" style="width: 60%;margin-left: 23%;">
-                                                    <img id="donorImg1" src="img/btns/candidate_new1.png" alt="donor image" >
-                                                    <div id="BtnHover2" class="BHover"><div class="BtnHoverP2">WHO ARE <br/> MY <br/> CANDIDATES?</div></div>
-                    </div> 
-             </div>-->
-             
-             
-             
-             
-             
-             
-             
-             
-             
-             
+         
              <div id="candidatelistdiv">
                 <div id="headWhatIsPP">WHAT IS THE GAME ABOUT?</div>
                 <div id="whyReg" >
@@ -144,63 +124,79 @@
                 </div>
             </div>
              
-             
-             
-             
-             
-             
              <div>
             <div id="leftButton">
                 <a href="index.html">
-                    <img id='campaignsaveimg' src="../img/btns/home.png" alt="home - button">
+                    <img id='campaignsaveimg' src="../img/btns/home.png" alt="Home">
                 </a>
             </div>
-            <div id="centerButton">
+            <div id="centerButtonL">
                 <a href="campaign_fundraising.html">
-                    <img id='campaignsaveimg2' src="../img/btns/campaign_fundraising.png" alt="campaign fundraising - button">
+                    <img id='campaignsaveimg2' src="../img/btns/campaign_fundraising.png" alt="Campaign fundraising">
+                </a>
+            </div>
+            <div id="centerButtonR">
+                <a href="campaign_fundraising.html">
+                    <img id='videoContest' src="../img/btns/" alt="Video contest">
                 </a>
             </div>
             <div id="rightButton">
                 <a href="voter_education.html">
-                    <img id='campaignsaveimg3' src="../img/btns/voter_education.png" alt="voter education - button">
+                    <img id='campaignsaveimg3' src="../img/btns/voter_education.png" alt="Voter education">
                 </a>
             </div>
         </div>
              
-<!--             <div id="headerlanguage">
-                    <a href="index.html"><img id="headerlanguageImg" src="../img/btns/en2.png" alt="English"></a>
-                    <a href="../spanish/index.html"><img id="headerlanguageImg1" src="../img/btns/es1.png" alt="Spanish"></a>
-             </div>-->
              
              <p style='clear:both;'>
                 
              </p>
              
-                    <div>
-            <div id="leftdownload">
-                <a href="https://itunes.apple.com/in/app/party-punchout/id870381762?mt=8">
-                    <img id='campaignsaveimg' src="../img/download_ios.png" alt="a unique game - button">
-                </a>
-            </div>
-            <div id="rightdownload">
-                <a href="https://play.google.com/store/apps/details?id=com.jeff.partypunchout&hl=en">
-                    <img id='campaignsaveimg2' src="../img/download_android.png" alt="campaign fundraising - button">
-                </a>
-            </div>
+           <div>
+        	<table id="store_links">
+        		<tr>
+        			<td>
+			            <div id="iosLink">
+			                <a target="_blank" href="https://itunes.apple.com/in/app/party-punchout/id870381762?mt=8">
+			                    <img id='iosImg' src="../img/download_ios.png" alt="Get app for IOS">
+			                </a>
+			            </div>
+			        </td>    
+		            <td>
+			            <div id="windowsLink">
+			                <a target="_blank" href="http://www.windowsphone.com/en-us/store/app/partypunchout/06824de9-9d91-41e1-b679-6c0840488899" >
+			                    <img id='windowsImg' src="../img/download_windows.png" alt="Get app for Windows Phone">
+			                </a>
+			            </div>
+		            </td>
+		            <td>
+			            <div id="AndroidLink">
+			                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.jeff.partypunchout&hl=en">
+			                    <img id='AndroidImg' src="../img/download_android.png" alt="Get app for Android" />
+			                </a>
+			            </div>
+		            </td>
+	            </tr>
+            </table>
         </div>
              
             
             <p style='clear:both;'>
             </p>
-                   
-             
-             
-             
-             
+  
             </div>
+            
+            <div id="headerlanguage">
+                    <a href="a_unique_game.html"><img id="EngLangImg" src="../img/btns/en2.png" alt="English"></a>
+                    <a href="../spanish/a_unique_game.html"><img id="SpanLangImg" src="../img/btns/es1.png" alt="Spanish"></a>
+            </div>
+            
             <p style='clear:both;'>
-        </div>
-        <div id="copyright">Copyright &copy; 2014 - Party Punchout &#153;</div>
+            </p>
+
+        <div id="copyright"><br /><br />
+        	Copyright &copy; 2014 - Party Punchout &#153;
+        	</div>
         
         <div>
                 <table>
@@ -211,48 +207,7 @@
                     </tr>
                 </table>
              </div>
-             <div>
-                
-                
-                
-                
-                
-                
-                
-                
-                        <script src="../js/jquery-1.11.0.js"></script>
-        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
-        <script>
-            //$("#editbackimg").mouseover(function() {
-            //    $("#editbackimg").attr("src", "img/back_btn2.png");
-            //});
-            //$("#editbackimg").mouseleave(function() {
-            //    $("#editbackimg").attr("src", "img/back_btn1.png");
-            //});
-            
-            $("#campaignsaveimg").mouseover(function() {
-                $("#campaignsaveimg").attr("src", "../img/btns/home_pushed.png");
-            });
-            $("#campaignsaveimg").mouseleave(function() {
-                $("#campaignsaveimg").attr("src", "../img/btns/home.png");
-            });
-            
-            $("#campaignsaveimg2").mouseover(function() {
-                $("#campaignsaveimg2").attr("src", "../img/btns/campaign_fundraising_pushed.png");
-            });
-            $("#campaignsaveimg2").mouseleave(function() {
-                $("#campaignsaveimg2").attr("src", "../img/btns/campaign_fundraising.png");
-            });
-            
-            $("#campaignsaveimg3").mouseover(function() {
-                $("#campaignsaveimg3").attr("src", "../img/btns/voter_education_pushed.png");
-            });
-            $("#campaignsaveimg3").mouseleave(function() {
-                $("#campaignsaveimg3").attr("src", "../img/btns/voter_education.png");
-           
-         });
-        </script>
-        
+                       
         
     </body>
 </html>
