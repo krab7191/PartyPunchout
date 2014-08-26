@@ -44,7 +44,7 @@ var preloadMediaImages = new function (){
 
 var appendMediaLinks = function () {
 	$("body").append("<div id='mediaLinks'><img id='slideTop' src='../img/5.png' /></div>");
-	$("#mediaLinks").append("<div id='mediaLinksSlider'><a href='https://www.facebook.com/partypunchout?ref=br_tf'><img src='../img/1.png' /></a><a href='#'><img src='../img/2.png' /></a><a href='https://www.youtube.com/channel/UCSYtgNVwkavCbPsEwz1UYNw'><img src='../img/3.png' /></a><a href='#'><img src='../img/4.png' /></a></div>");
+	$("#mediaLinks").append("<div id='mediaLinksSlider'><a href='https://www.facebook.com/partypunchout?ref=br_tf'><img src='../img/1.png' /></a><a href='https://twitter.com/PartyPunchout'><img src='../img/2.png' /></a><a href='https://www.youtube.com/channel/UCSYtgNVwkavCbPsEwz1UYNw'><img src='../img/3.png' /></a><a href='https://plus.google.com/u/0/115190507198706382011/videos'><img src='../img/4.png' /></a></div>");
 	slideTop();
 };
 
@@ -72,37 +72,38 @@ var slideTop = function () {
 var initLangSwitch = function () {
 	$("#EngLangImg").click(function () {
 		console.log("Language changed to English");
+		
 		language = '0';
-		checkLangAndLoadPage();
+		checkLangAndLoadPage(250);
 	});
 	
 	$("#SpanLangImg").click(function () {
 		console.log("Language changed to Spanish");
 		language = '1';
-		checkLangAndLoadPage();
+		checkLangAndLoadPage(250);
 	});
 };	
 
-var checkLangAndLoadPage = function (){
+var checkLangAndLoadPage = function (timeout){
 	
 	//If page isn't original index...
 	if (urlPath != "http://partypunchout.com/index.html"){
-	    setInterval(function() {
+	    setTimeout(function() {
 	        if (language == '1') {
 	            window.location.href = "../spanish/" + urlPath.substring(urlPath.lastIndexOf('/')+1);
 	        } else {
 	            window.location.href = "../english/" + urlPath.substring(urlPath.lastIndexOf('/')+1);
 	        }
-	    }, 8000);
+	    }, timeout);
     }
     else {
-    	setInterval(function() {
+    	setTimeout(function() {
 	        if (language == '1') {
 	            window.location.href = "http://partypunchout.com/spanish/index.html";
 	        } else {
 	            window.location.href = "http://partypunchout.com/english/index.html";
 	        }
-	    }, 8000);
+	    }, timeout);
     };
 };
 
