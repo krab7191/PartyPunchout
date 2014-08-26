@@ -1,0 +1,28 @@
+
+
+#navLinks #leftButton{
+    width: 18%;
+    height:53px;
+    float: left;
+    margin-left: 10%;
+}
+#navLinks #centerButtonL{
+    width: 18%;
+    height:53px;
+    float: left;
+    margin-left:2%;
+    margin-right:2%;
+}
+#navLinks #centerButtonR {
+	width:18%;
+	height:53px;
+	margin-right:1%;
+	margin-left:1%;
+	display:inline;
+}
+#navLinks #rightButton{
+    width: 18%;
+    height:53px;
+    float: right;
+    margin-right:10%;
+}

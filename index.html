@@ -35,13 +35,28 @@
         </head>
         
         <body>
-	        <div id="splash"><!--splash!--></div>
-	        <div align="center">
-	            <div><img align="center" id="loader" src="img/splash/loading.gif"></div>
-	        </div>
-	        <script type="text/javascript">
-	        	checkLangAndLoadPage();
-	        </script>
+        	
+        	<!-- The Progress Bar Container -->
+			<div id="progressContainer">
+			    Loading: <br />
+			    <progress id="loadingBar" max="100" value="0">
+			       <strong>Loaded <span id="value">0</span>/100</strong>
+			    </progress>
+			</div>
+        	
+        	<div id="content">
+		        <div id="splash"><!--splash!--></div>
+		        <div align="center">
+		            <div><img align="center" id="loader" src="img/splash/loading.gif"></div>
+		        </div>
+		        <script type="text/javascript">
+		            $(window).load(function() {
+		            	preloadMediaImages.init;
+		            });
+		        	checkLangAndLoadPage();
+		        </script>
+		    </div> 
+		       
         </body>
         
 </html>

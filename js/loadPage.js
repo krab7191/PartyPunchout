@@ -4,11 +4,70 @@
 
 var language = '0';
 var urlPath = window.location.pathname;
+var imageArray;
 
 $(window).load(function () {
 	setMouseovers();
 	initLangSwitch();
+	appendMediaLinks();
 });
+
+var preloadMediaImages = new function (){
+	var me = this;
+	
+	var $loader;
+	var currImage = 0;
+	
+	me.init = function (){
+		var s = [];
+		
+		for (vari=1; i<5; i++) {
+			s.push('img/' + i + '.png');
+		}
+		$loader = $("#loadingBar");
+		$loader.max = s.length;
+		imageCache.pushArray(s, loadImageEvent, loadAllEvent);
+	};
+	function loadImageEvent (){
+		var val = parseInt($loader.attr('value'));
+		var incr = 100 / s.length;
+		val += incr;
+		$loader.attr('value', val);
+	};
+	function loadAllEvent () {
+		$('body').addClass('loaded');
+		showImage(1, true);
+	};
+	
+	
+};
+
+var appendMediaLinks = function () {
+	$("body").append("<div id='mediaLinks'><img id='slideTop' src='../img/5.png' /></div>");
+	$("#mediaLinks").append("<div id='mediaLinksSlider'><a href='https://www.facebook.com/partypunchout?ref=br_tf'><img src='../img/1.png' /></a><a href='#'><img src='../img/2.png' /></a><a href='https://www.youtube.com/channel/UCSYtgNVwkavCbPsEwz1UYNw'><img src='../img/3.png' /></a><a href='#'><img src='../img/4.png' /></a></div>");
+	slideTop();
+};
+
+var slideTop = function () {
+	$("#slideTop").mouseover(function () {
+		$("#mediaLinksSlider").css("display", "inline");
+		$("#mediaLinksSlider").animate({
+			width:200
+		}, 800, function (){
+			//Animation complete
+		});
+		
+	});
+	$("#mediaLinksSlider").mouseleave(function () {
+		$(this).animate({
+			width: 0
+		}, 800, function (){
+			//Animation complete
+			$(this).css("display", "none");
+		});
+		
+	});
+};
 	
 var initLangSwitch = function () {
 	$("#EngLangImg").click(function () {
@@ -26,25 +85,38 @@ var initLangSwitch = function () {
 
 var checkLangAndLoadPage = function (){
 	
-    setInterval(function() {
-        if (language == '1') {
-            window.location.href = "../spanish/index.html";
-        } else {
-            window.location.href = "english/index.html";
-        }
-    }, 800);
+	//If page isn't original index...
+	if (urlPath != "http://partypunchout.com/index.html"){
+	    setInterval(function() {
+	        if (language == '1') {
+	            window.location.href = "../spanish/" + urlPath.substring(urlPath.lastIndexOf('/')+1);
+	        } else {
+	            window.location.href = "../english/" + urlPath.substring(urlPath.lastIndexOf('/')+1);
+	        }
+	    }, 8000);
+    }
+    else {
+    	setInterval(function() {
+	        if (language == '1') {
+	            window.location.href = "http://partypunchout.com/spanish/index.html";
+	        } else {
+	            window.location.href = "http://partypunchout.com/english/index.html";
+	        }
+	    }, 8000);
+    };
 };
 
 
-//Mouseover and mouseleave functions:
+//Mouseover and mouseleave handling for all pages:
 var setMouseovers = function () {
-	var leftButton, leftButtonDown;
+	var leftButton = "../img/btns/home.png";
+	var leftButtonDown = "../img/btns/home_pushed.png";
 	var midLeftButton = "../img/btns/campaign_fundraising.png";
 	var midLeftButtonDown = "../img/btns/campaign_fundraising_pushed.png";
-	var midRightButton = "../img/btns/video_contest.png";
-	var midRightButtonDown = "../img/btns/video_contest_pushed.png";
-	var rightButton = "../img/btns/voter_education.png";
-	var rightButtonDown = "../img/btns/voter_education_pushed.png";
+	var midRightButton = "../img/btns/voter_education.png";
+	var midRightButtonDown = "../img/btns/voter_education_pushed.png";
+	var rightButton = "../img/btns/video_contest.png";
+	var rightButtonDown = "../img/btns/video_contest_pushed.png";
 	
 	var currentPage = urlPath.substring(urlPath.lastIndexOf('/')+1);
 	
@@ -54,19 +126,40 @@ var setMouseovers = function () {
 	//check if page is in spanish or english: indexof returns -1 when string can't be found
 	if (urlPath.indexOf("spanish") != "-1"){
 		//Set spanish variables:
-		midLeftButton = "";
-		midLeftButtonDown = "";
-		midRightButton = "";
-		midRightButtonDown = "";
-		rightButton = "";
-		rightButtonDown = "";
+		leftButton = "../img/btns/home_long_s.png";
+		leftButtonDown = "../img/btns/home_long_pushed_s.png";
+		midLeftButton = "../img/btns/campaign_fundraising_s.png";
+		midLeftButtonDown = "../img/btns/campaign_fundraising_pushed_s.png";
+		midRightButton = "../img/btns/voter_education_s.png";
+		midRightButtonDown = "../img/btns/voter_education_pushed_s.png";
+		rightButton = "../img/btns/video_contest_s.png";
+		rightButtonDown = "../img/btns/video_contest_pushed_s.png";
+		
         if (currentPage == 'index.html'){
 			leftButton = "../img/btns/a_unique_game_s.png";
 			leftButtonDown = "../img/btns/a_unique_game_pushed_s.png";
 		}
+		else if (currentPage == 'campaign_fundraising.html'){
+			midLeftButton = "../img/btns/a_unique_game_s.png";
+			midLeftButtonDown = "../img/btns/a_unique_game_pushed_s.png";
+			
+			//handle 'register now' button
+			$("#register").mouseover(function() {
+				$(this).attr("src", "../img/btns/register_pushed_s.png");
+			});
+			$("#register").mouseleave(function() {
+				$(this).attr("src", "../img/btns/register_s.png");
+			});
+		}
+		else if (currentPage == "voter_education.html"){
+			//voter education...
+			midLeftButton = "../img/btns/a_unique_game_s.png";
+			midLeftButtonDown = "../img/btns/a_unique_game_pushed_s.png";
+			midRightButton = "../img/btns/campaign_fundraising_s.png";
+			midRightButtonDown = "../img/btns/campaign_fundraising_pushed_s.png";
+		}
 		else{
-			leftButton = "../img/btns/home_s.png";
-			leftButtonDown = "../img/btns/home_pushed_s.png";
+			//a unique game in spanish! Do nothing!
 		};
 	}
 	else{
@@ -75,39 +168,57 @@ var setMouseovers = function () {
 			leftButton = "../img/btns/a_unique_game.png";
 			leftButtonDown = "../img/btns/a_unique_game_pushed.png";
 		}
+		else if (currentPage == 'campaign_fundraising.html'){
+			midLeftButton = "../img/btns/a_unique_game.png";
+			midLeftButtonDown = "../img/btns/a_unique_game_pushed.png";
+			
+			//handle 'register now' button
+			$("#register").mouseover(function() {
+				$(this).attr("src", "../img/btns/register_pushed.png");
+			});
+			$("#register").mouseleave(function() {
+				$(this).attr("src", "../img/btns/register.png");
+			});
+		}
+		else if (currentPage == "voter_education.html"){
+			//voter education...
+			midLeftButton = "../img/btns/a_unique_game.png";
+			midLeftButtonDown = "../img/btns/a_unique_game_pushed.png";
+			midRightButton = "../img/btns/campaign_fundraising.png";
+			midRightButtonDown = "../img/btns/campaign_fundraising_pushed.png";
+		}
 		else{
-			leftButton = "../img/btns/home.png";
-			leftButtonDown = "../img/btns/home_pushed.png";
+			//a unique game! do nothing!
 		};
 	};
 	
 	
 	$("#campaignsaveimg").mouseover(function() {
-	    $("#campaignsaveimg").attr("src", leftButtonDown);
+	    $(this).attr("src", leftButtonDown);
 	});
 	$("#campaignsaveimg").mouseleave(function() {
-	    $("#campaignsaveimg").attr("src", leftButton);
+	    $(this).attr("src", leftButton);
 	});
 	
 	$("#campaignsaveimg2").mouseover(function() {
-	    $("#campaignsaveimg2").attr("src", midLeftButtonDown);
+	    $(this).attr("src", midLeftButtonDown);
 	});
 	$("#campaignsaveimg2").mouseleave(function() {
-	    $("#campaignsaveimg2").attr("src", midLeftButton);
-	});
-	
-	$("#videoContest").mouseover(function() {
-	    $("#videoContest").attr("src", midRightButtonDown);
-	});
-	$("#videoContest").mouseleave(function() {
-	    $("#videoContest").attr("src", midRightButton);
+	    $(this).attr("src", midLeftButton);
 	});
 	
 	$("#campaignsaveimg3").mouseover(function() {
-	    $("#campaignsaveimg3").attr("src", rightButtonDown);
+	    $(this).attr("src", midRightButtonDown);
 	});
 	$("#campaignsaveimg3").mouseleave(function() {
-	    $("#campaignsaveimg3").attr("src", rightButton);
+	    $(this).attr("src", midRightButton);
+	});
+	
+	$("#videoContest").mouseover(function() {
+	    $(this).attr("src", rightButtonDown);
+	});
+	$("#videoContest").mouseleave(function() {
+	    $(this).attr("src", rightButton);
 	});
 };
          

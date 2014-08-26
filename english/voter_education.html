@@ -5,13 +5,22 @@
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <link rel="stylesheet" href="../css/bootstrap.css" />
         <link rel="stylesheet" href="../css/styles.css" />
-        <!-- include libraries/variables -->
-        <script src="js/jquery-1.11.0.js"></script>
+        
+        <!-- include libraries/variables, jQuery CDN for speed -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!--Main page functions-->
+        <script type="text/javascript" src="../js/loadPage.js"></script>
+
         <style>
-            
-            
-            
-            
+            body {
+            	background-image: url('../img/website_bg.jpg');
+            	background-repeat: no-repeat;
+            	background-size: cover;
+            	margin: 0;
+            	padding: 0;
+            	min-height: 750px;
+            }
             #pDonor {
                 margin: 0 0 30px;
                 line-height:170%;
@@ -83,33 +92,18 @@
         </style>
     </head>
 
-    <body background='../img/website_bg.jpg' style='background-repeat: no-repeat;background-size: cover;margin: 0;padding: 0;min-height: 750px;'>
+    <body>
         <div id="container">
             <div>
                 <div id="headerImage">
                     <img src="../img/website_header.png" alt="Party Punchout image">
                 </div>
-                <div id="headerlanguage">
-                    <a href="voter_education.html"><img id="headerlanguageImg" src="../img/btns/en2.png" alt="English"></a>
-                    <a href="../spanish/voter_education.html"><img id="headerlanguageImg1" src="../img/btns/es1.png" alt="Spanish"></a>
-                </div>
+                
                 <div style="clear:both;">
                     
                 </div>
             </div>
-             
-             
-             
-             
-             
-             
-             
-             
-             
-             
-             
-             
-             
+  
             <div id="votereddiv">
                 <div id="votered">
                     VOTER EDUCATION
@@ -139,23 +133,25 @@
                 
             </p>
             
-            
-            
-            
-            <div>
+        <div id="navLinks">
             <div id="leftButton">
-                <a href="a_unique_game.html">
-                    <img id='campaignsaveimg' src="../img/btns/a_unique_game.png" alt="a unique game - button">
+                <a href="index.html">
+                    <img id='campaignsaveimg' src="../img/btns/home.png" alt="Home">
                 </a>
             </div>
-            <div id="centerButton">
+            <div id="centerButtonL" style="width:14% !important;">
+                <a href="a_unique_game.html">
+                    <img id='campaignsaveimg2' src="../img/btns/a_unique_game.png" alt="A unique game">
+                </a>
+            </div>
+            <div id="centerButtonR">
                 <a href="campaign_fundraising.html">
-                    <img id='campaignsaveimg2' src="../img/btns/campaign_fundraising.png" alt="campaign fundraising - button">
+                    <img id='campaignsaveimg3' src="../img/btns/campaign_fundraising.png" alt="Campaign fundraising">
                 </a>
             </div>
             <div id="rightButton">
-                <a href="index.html">
-                    <img id='campaignsaveimg3' src="../img/btns/home.png" alt="home - button">
+                <a href="video_contest.php">
+                    <img id='videoContest' src="../img/btns/video_contest.png" alt="Video contest">
                 </a>
             </div>
         </div>
@@ -167,19 +163,38 @@
                 
              </p>
              
-                    <div>
-            <div id="leftdownload">
-                <a href="https://itunes.apple.com/in/app/party-punchout/id870381762?mt=8">
-                    <img id='campaignsaveimg' src="../img/download_ios.png" alt="a unique game - button">
-                </a>
-            </div>
-            <div id="rightdownload">
-                <a href="https://play.google.com/store/apps/details?id=com.jeff.partypunchout&hl=en">
-                    <img id='campaignsaveimg2' src="../img/download_android.png" alt="campaign fundraising - button">
-                </a>
-            </div>
+         <div>
+        	<table id="store_links">
+        		<tr>
+        			<td>
+			            <div id="iosLink">
+			                <a target="_blank" href="https://itunes.apple.com/in/app/party-punchout/id870381762?mt=8">
+			                    <img id='iosImg' src="../img/download_ios.png" alt="Get app for IOS">
+			                </a>
+			            </div>
+			        </td>    
+		            <td>
+			            <div id="windowsLink">
+			                <a target="_blank" href="http://www.windowsphone.com/en-us/store/app/partypunchout/06824de9-9d91-41e1-b679-6c0840488899" >
+			                    <img id='windowsImg' src="../img/download_windows.png" alt="Get app for Windows Phone">
+			                </a>
+			            </div>
+		            </td>
+		            <td>
+			            <div id="AndroidLink">
+			                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.jeff.partypunchout&hl=en">
+			                    <img id='AndroidImg' src="../img/download_android.png" alt="Get app for Android" />
+			                </a>
+			            </div>
+		            </td>
+	            </tr>
+            </table>
         </div>
              
+            <div id="headerlanguage">
+                <img id="EngLangImg" src="../img/btns/en2.png" alt="English">
+                <img id="SpanLangImg" src="../img/btns/es1.png" alt="Spanish">
+            </div>
             
             <p style='clear:both;'>
             </p>
@@ -197,12 +212,6 @@
                     </tr>
                 </table>
         </div>
-        
-        <script type="text/javascript">
-        	$(window).load(function () {
-        		setMouseovers();
-        	});
-        </script>
         
     </body>
 </html>
