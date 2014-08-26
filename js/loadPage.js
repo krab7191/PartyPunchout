@@ -49,14 +49,16 @@ var appendMediaLinks = function () {
 };
 
 var slideTop = function () {
+
 	$("#slideTop").mouseover(function () {
-		$("#mediaLinksSlider").css("display", "inline");
-		$("#mediaLinksSlider").animate({
-			width:200
-		}, 800, function (){
-			//Animation complete
-		});
-		
+		if (!$("#mediaLinksSlider").is(':animated')){
+			$("#mediaLinksSlider").css("display", "inline");
+			$("#mediaLinksSlider").animate({
+				width:200
+			}, 800, function (){
+				//Animation complete
+			});
+		};
 	});
 	$("#mediaLinksSlider").mouseleave(function () {
 		$(this).animate({
