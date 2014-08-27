@@ -22,7 +22,6 @@ body{
 }
 #slideTop:hover {
 	cursor:alias;
-	cursor:pointer;
 }
 #mediaLinksSlider {
 	z-index:9999;

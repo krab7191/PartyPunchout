@@ -52,21 +52,17 @@ var slideTop = function () {
 
 	$("#mediaLinks").mouseover(function () {
 		if (!$("#mediaLinks").is(':animated')){
-			//$("#mediaLinksSlider").css("display", "inline");
 			$("#mediaLinks").animate({
 				width:235
-			}, 800, function (){
-				//Animation complete
+			}, 400, function (){
 			});
 		};
 	});
-	$("#slideTop").mouseleave(function () {
+	$("#mediaLinks").mouseleave(function () {
 		if (!$("#mediaLinks").is(':animated')){
 			$("#mediaLinks").animate({
 				width: 50
-			}, 800, function (){
-				//Animation complete
-				//$("#mediaLinksSlider").css("display", "none");
+			}, 400, function (){
 			});
 	    };
     });
