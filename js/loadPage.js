@@ -10,6 +10,7 @@ $(window).load(function () {
 	setMouseovers();
 	initLangSwitch();
 	appendMediaLinks();
+	slideTop();
 });
 
 var preloadMediaImages = new function (){
@@ -45,30 +46,30 @@ var preloadMediaImages = new function (){
 var appendMediaLinks = function () {
 	$("body").append("<div id='mediaLinks'><img id='slideTop' src='../img/5.png' /></div>");
 	$("#mediaLinks").append("<div id='mediaLinksSlider'><a href='https://www.facebook.com/partypunchout?ref=br_tf'><img src='../img/1.png' /></a><a href='https://twitter.com/PartyPunchout'><img src='../img/2.png' /></a><a href='https://www.youtube.com/channel/UCSYtgNVwkavCbPsEwz1UYNw'><img src='../img/3.png' /></a><a href='https://plus.google.com/u/0/115190507198706382011/videos'><img src='../img/4.png' /></a></div>");
-	slideTop();
 };
 
 var slideTop = function () {
 
-	$("#slideTop").mouseover(function () {
-		if (!$("#mediaLinksSlider").is(':animated')){
-			$("#mediaLinksSlider").css("display", "inline");
-			$("#mediaLinksSlider").animate({
-				width:200
+	$("#mediaLinks").mouseover(function () {
+		if (!$("#mediaLinks").is(':animated')){
+			//$("#mediaLinksSlider").css("display", "inline");
+			$("#mediaLinks").animate({
+				width:235
 			}, 800, function (){
 				//Animation complete
 			});
 		};
 	});
-	$("#mediaLinksSlider").mouseleave(function () {
-		$(this).animate({
-			width: 0
-		}, 800, function (){
-			//Animation complete
-			$(this).css("display", "none");
-		});
-		
-	});
+	$("#slideTop").mouseleave(function () {
+		if (!$("#mediaLinks").is(':animated')){
+			$("#mediaLinks").animate({
+				width: 50
+			}, 800, function (){
+				//Animation complete
+				//$("#mediaLinksSlider").css("display", "none");
+			});
+	    };
+    });
 };
 	
 var initLangSwitch = function () {
