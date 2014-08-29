@@ -36,7 +36,7 @@ function gaSSDSLoad (acct) {
 
 /* and run it */
 $(window).load(function () {
-	gaSSDSLoad("UA-54264930-1");                     //Tracking ID for Jeff's account
+	gaSSDSLoad("UA-54264930-1");                     //Tracking ID for webmaster's account
 });
 
 
