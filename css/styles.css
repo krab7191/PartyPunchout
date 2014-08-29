@@ -46,6 +46,46 @@ body{
 	border:3px solid black;
 }
 
+/* #leftNav is on education links page, used for easy nav through political issues displayed in #dataTable */
+#leftNav {
+	position:fixed;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:0px;
+	overflow:hidden;
+	background-color:rgba(192, 192, 192, .75);
+	z-index:999;
+	border-right:2px solid black;
+	padding:80px 0 0 25px;
+	box-shadow: 10px 10px 50px;
+}
+#leftNav a {
+	font-weight: 900;
+	font-size:large;
+}
+#CSVTable {
+    box-shadow:5px 5px 25px;
+	position:relative; 
+	margin: 0 auto 0 auto;
+	height:80%; 
+	min-height:600px;
+	width:80%; 
+	background-color: white; 
+	padding:20px;
+}
+#CSVTable td {
+	border:1px solid black;
+	min-height:10px;
+	min-width:50px;
+	margin:10px;
+	padding:5px;
+}
+
+#CSVTable tr:first
+
+/* END education links specific styling */
+
 #headWhyReg{
     font-size: 23px;
     color: #fff;
@@ -384,11 +424,12 @@ table#store_links td {
     background-image:url('../img/voter_education_bg.png');
     background-repeat:no-repeat;
     background-size: contain;
-    min-height: 585px;
+    min-height: 590px;
     margin: 0 auto;
-    width: 712px;
+    width: 722px;
     margin-top: 45px;
     background-size: cover;
+    overflow: auto;
 }
 
 
