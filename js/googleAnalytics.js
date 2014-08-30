@@ -2,13 +2,11 @@
 Inserts GA using DOM insertion of <script> tag and "script onload" method to
 initialize the pageTracker object. Prevents GA insertion from blocking I/O!
 
-As suggested in Steve Souder's talk. See:
-
+As suggested by Steve Souder:
 http://google-code-updates.blogspot.com/2009/03/steve-souders-lifes-too-short-write.html
-
 */
 
-/* acct is GA account number*/
+/* acct is GA tracking ID*/
 function gaSSDSLoad (acct) {
   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."),
       pageTracker,
