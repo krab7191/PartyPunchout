@@ -92,16 +92,20 @@ body{
 	width:75%;
 	height:80%;
 	margin: 20px auto 0 auto;
-	background-color:white;
+	background-color: rgb(192, 192, 192);
 	padding:40px;
 	padding-top:5px;
 	overflow:auto;
 }
-p.italic {
+h3.italic {
 	font-style:italic;
 }
 
-div#contestGuidelines p, h1, h2 {
+h2#blue {
+	color:red;
+}
+
+div#contestGuidelines p, h1, h2, h3 {
 	text-align:center;
 }
 
