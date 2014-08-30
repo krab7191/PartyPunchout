@@ -82,9 +82,33 @@ body{
 	padding:5px;
 }
 
-#CSVTable tr:first
-
 /* END education links specific styling */
+
+/* Styling for video contest guidelines page */
+#contestGuidelines {
+	border:1px solid black;
+	border-radius:10px;
+	box-shadow:5px 5px 25px;
+	width:75%;
+	height:80%;
+	margin: 20px auto 0 auto;
+	background-color:white;
+	padding:40px;
+	padding-top:5px;
+	overflow:auto;
+}
+p.italic {
+	font-style:italic;
+}
+
+div#contestGuidelines p, h1, h2 {
+	text-align:center;
+}
+
+div#contestGuidelines #tshirt {
+    margin:0 auto 0 auto;
+    width:20%;
+}
 
 #headWhyReg{
     font-size: 23px;
