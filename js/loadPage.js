@@ -115,8 +115,8 @@ var setMouseovers = function () {
 	var midLeftButtonDown = "../img/btns/campaign_fundraising_pushed.png";
 	var midRightButton = "../img/btns/voter_education.png";
 	var midRightButtonDown = "../img/btns/voter_education_pushed.png";
-	var rightButton = "../img/btns/video_contest.png";
-	var rightButtonDown = "../img/btns/video_contest_pushed.png";
+	var rightButton = "../img/btns/video_mock_a_thon.png";
+	var rightButtonDown = "../img/btns/video_mock_a_thon_pushed.png";
 	
 	var currentPage = urlPath.substring(urlPath.lastIndexOf('/')+1);
 	
@@ -132,8 +132,8 @@ var setMouseovers = function () {
 		midLeftButtonDown = "../img/btns/campaign_fundraising_pushed_s.png";
 		midRightButton = "../img/btns/voter_education_s.png";
 		midRightButtonDown = "../img/btns/voter_education_pushed_s.png";
-		rightButton = "../img/btns/video_contest_s.png";
-		rightButtonDown = "../img/btns/video_contest_pushed_s.png";
+		rightButton = "../img/btns/video_mock_a_thon.png";
+		rightButtonDown = "../img/btns/video_mock_a_thon_pushed.png";
 		
         if (currentPage == 'index.html'){
 			leftButton = "../img/btns/a_unique_game_s.png";
