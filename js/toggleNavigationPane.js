@@ -3,6 +3,7 @@
 
 $(window).load(function () {
 	var leftNav = $('#leftNav');
+	var leftLink = $("#leftNav a");
 	var isMoused = false;
 	
 	leftNav.mouseover(function () {
@@ -28,8 +29,6 @@ $(window).load(function () {
 			leftNav.animate({
 				opacity: '+=1'
 			}, time, function(){
-				//Done
-				console.log("visible");
 			});
 		};
 		if (!isMoused){
@@ -43,5 +42,26 @@ $(window).load(function () {
 			});
 		};
 	};
+	
 	blink(1200);
+	
+	leftLink.click(function(event){
+		var target = event.target.href;
+
+		target = target.substr(target.lastIndexOf('#'), target.length);
+
+		var DOMtarget = $(target);
+
+		DOMtarget.css('background-color', 'rgba(255,0,0,.5)');
+		
+		setTimeout(function(){
+			DOMtarget.animate({
+				backgroundColor: "rgba(255,0,0,0)"
+			}, 1000, function() {
+				//Fade out done!
+			});
+		}, 2000);
+	});
+	
 });
+
