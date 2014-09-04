@@ -180,6 +180,8 @@ div#contestGuidelines #tshirt {
     height:53px;
     float: left;
     margin-left: 5.5%;
+    min-height:50px;
+    max-height:55px;
 }
 #centerButtonL{
     width: 22%;
@@ -187,21 +189,25 @@ div#contestGuidelines #tshirt {
     float: left;
     margin-left:1%;
     margin-right:1%;
+    min-height:50px;
+    max-height:55px;
 }
 #centerButtonR {
 	width:22%;
 	height:53px;
 	float:left;
 	display:inline;
+	min-height:50px;
+    max-height:55px;
 }
 #rightButton{
     width: 22%;
     height:53px;
     float: left;
     margin-left:1%;
+    min-height:50px;
+    max-height:55px;
 }
-
-
 
 #singleButton{
     width: 20%;
