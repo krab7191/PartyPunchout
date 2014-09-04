@@ -13,7 +13,7 @@ $(window).load(function () {
 		//if the div isn't being animated and it's not already slid out
 		if ((!$(this).is(":animated")) && ($(this).css("width") == '0px')){
 			$(this).animate({
-				width: '+=250px'
+				width: '+=275px'
 			}, 600, function(){
 				//animation complete.
 				$("#navInstr").remove();
@@ -60,7 +60,9 @@ $(window).load(function () {
 			}, 1000, function() {
 				//Fade out done!
 			});
-		}, 2000);
+		}, 1000);
+		
+		$("#leftNav").css("width", "0px");
 	});
 	
 });
