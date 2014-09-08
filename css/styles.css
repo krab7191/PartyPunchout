@@ -134,6 +134,78 @@ div#contestGuidelines #tshirt {
 }
 /* End contest guidelines */
 
+/* 
+ * Ribbons on main page
+ */
+
+.cont {
+	position:fixed;
+	left:-2px;
+	height:100px;
+	width:325px;
+}
+#ribbon-container {
+	top:35%;
+	transform:translate(0px, -50%);
+	-webkit-transform:translate(0px, -50%);
+	-moz-transform:translate(0px, -50%);
+}
+#ribbon-container-two {
+	top:55%;
+	transform:translate(0px, -50%);
+	-webkit-transform:translate(0px, -50%);
+	-moz-transform:translate(0px, -50%);
+
+}
+.ribbon {
+	background-color:white;
+	height:70px;
+	width:200px;
+	box-shadow: 0px 5px 35px black;
+	-webkit-box-shadow: 0px 5px 35px black;
+	-moz-box-shadow: 0px 5px 35px black;
+}
+.red, .blue {
+	min-height:20px;
+}
+.ribbon p, .ribbon p {
+	position:relative;
+	left:60px;
+}
+.red {
+	background-color: #FF2222;
+}
+.blue {
+	position:relative;
+	background-color: #2222FF;
+}
+.ribbon:after
+{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 160px;
+	top: 70px;
+	border-width: 10px 20px;
+	border-style: solid;
+	border-color: #0000B2 #0000FF #0000FF #0000B2;
+}
+.ribbon:before {
+	content: '';
+	position:absolute;
+	width;0;
+	height:0;
+	left:200px;
+	top:20px;
+	border-width: 35px 30px;
+	border-style: solid;
+	border-color: #0000FF transparent #0000FF #0000FF;
+}
+/*
+ * End ribbons
+ */
+
 #headWhyReg{
     font-size: 23px;
     color: #fff;
