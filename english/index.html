@@ -5,23 +5,19 @@
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <link rel="stylesheet" href="../css/bootstrap.css" />
         <link rel="stylesheet" href="../css/styles.css" />
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
         
         <!-- include libraries/variables, jQuery CDN for speed -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <!--Main page functions-->
         <script type="text/javascript" src="../js/loadPage.js"></script>
-        
+        <script type="text/javascript" src="../js/pressPopup.js"></script>
         <script type="text/javascript" src="../js/googleAnalytics.js"></script>
         
         <style>
             body {
             	background-image: url('../img/website_bg.jpg');
-            	background-repeat: no-repeat;
-            	background-size: cover;
-            	margin: 0;
-            	padding: 0;
-            	min-height: 750px;
             }
             
             #pDonor {
@@ -96,23 +92,95 @@
     </head>
 
     <body>
-    	
-    	<div class="cont" id="ribbon-container">
-    		<div id="top-ribbon" class="ribbon">
-    			<div class="red"></div>
-    				<strong><p>
-    					Press Release</p>
-					</strong>
-    			<div class="blue"></div>
+    	<div id="press">
+    		<div align="center">
+    			<h2><br />
+	    			<strong>
+	    				Changing the U.S. Political Landscape with Party Punchout
+	    			</strong>
+    			</h2>
+    			<br /><br />
     		</div>
-    	</div>
-    	<div class="cont" id="ribbon-container-two">
-    		<div id="bottom-ribbon" class="ribbon">
-    			<div class="red"></div>
-    				<strong><p>
-    					&nbsp;&nbsp;&nbsp;&nbsp;Our Story</p
-					</strong>
-    			<div class="blue"></div>
+    		<div align="center">
+    			<i>
+    				<h3>Unique App Combines Gameplay, Campaign Fundraising and Voter Education
+    					</h3>
+    			</i>
+    			<br /><br /><br />
+    		</div>
+    		<div id="pressText">
+    			<p>
+    				<strong>August 23, 2014</strong> -- JIKA App Development LLC today announced the release of
+an app unique in the mobile, tablet and laptop spheres.
+    			</p>
+    			<p>
+    				<strong><b>PartyPunchout</b></strong>, developed in collaboration with Clicklabs, brings together three
+elements not previously seen together in the world of mobile apps. At the 
+core of the game is the ideological battle waged every day in this era of hyper-
+polarized politics: the war between Republicans and Democrats. Players register 
+with a zip code, choose a party affiliation, and the race for office is on, with well-
+known political figures — like Arnold Schwarzenegger, Nancy Pelosi and Ronald 
+Reagan — attempting to shoot down the other party’s ideas as they go.
+    			</p>
+    			<p>
+    				Links within the app allow a player to find out in real time who their own party’s
+candidates for office are, at every level from their local Congressional district, 
+all the way to the Presidency. For political Candidates, the app will be a game-
+changing method of grassroots fundraising: they register and list their campaigns 
+for free, and a link shows up which takes users directly to their campaign 
+donation web pages, where supporters can donate if they wish.
+    			</p>
+    			<p>
+    				“Name-recognition is everything in the political sphere,” says Jeff Wrisley, creator 
+of the app, who ran for Congress himself in 2002. “We wanted to find a way 
+both to educate voters via a fun game, but also to give candidates for office 
+— particularly non-incumbents — a quick and effective way to get their names 
+out there. Every candidate, and every campaign finance manager, knows that 
+a successful campaign depends upon reaching as many people as possible. 
+It’s a ‘numbers game.’ Mobile apps that can connect constituents and their 
+candidates will be an essential element in the future of politics and campaigns.”
+    			</p>
+    			<p>
+    				The third element — voter education — is found in Party Punchout’s linked
+website, where players can seek for more understanding of the political issues 
+that form the heart of the game. Wrisley hopes to position the game as a 
+valuable tool in the classroom as well, where the appeal of smartphone and 
+tablet games to the younger segment of the population is undeniable. “The 
+future of democracy,” he continues, “depends upon the engagement of today’s 
+kids.”
+    			</p>
+    			<p>
+    				“Many people think our political process is broken, corrupt and dominated by
+money,” says Wrisley. “While there is some truth in that, I still believe in the 
+tremendous potential of informed voters to overcome the power of big money 
+interests and make a difference at the voting booth. Many people don’t even 
+know who their Congressional candidates, or their Representatives, or even their 
+Gubernatorial candidates — are. We wanted to find a way to allow the average 
+voter to find out about his or her current political candidates, through a simple 
+game.”
+    			</p>
+    			<p>
+    				Wrisley seems an unlikely character in the world of app development: a genial
+64-year old, with a broad smile and folksy Midwestern manner that conceals a 
+shrewd understanding of both the tech and the political worlds. The idealism 
+that prompted his own run for office survived after stints working in Iraq and 
+Afghanistan, and he retains an unbridled optimism in the process of American 
+democracy. “Even in this time of extreme polarization in politics and powerful 
+special interests on both the left and the right, I think individuals can still make a 
+difference if they are well-informed and they get out and vote.”
+    			</p>
+    			<p>
+    				JIKA App Development teamed up with Click Labs to actually build the app. 
+Both partners see tremendous potential to develop the concept further, with the 
+creation of context-specific game apps for democracies worldwide.
+    			</p>
+    			<p>
+    				<strong>Contact</strong>
+    			</p>
+    			<p>
+    				Jeffrey Wrisley<br />President &amp; CEO, JIKA App Development LLC<br />jwrisley@JIKAappdevelopment.com
+    			</p>
+    			<br />
     		</div>
     	</div>
     	
@@ -160,6 +228,12 @@
                 </div>
             
             </div>
+            <div align="center">
+            	<br />
+            	<button onclick="regPress();" id="pressButton">PRESS RELEASE</button>
+            </div>
+            
+            
         </div>
             
             <p style="clear:both;">

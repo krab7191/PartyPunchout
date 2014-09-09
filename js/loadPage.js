@@ -45,7 +45,7 @@ var preloadMediaImages = new function (){
 
 var appendMediaLinks = function () {
 	$("body").append("<div id='mediaLinks'><img id='slideTop' src='../img/5.png' /></div>");
-	$("#mediaLinks").append("<div id='mediaLinksSlider'><a href='https://www.facebook.com/partypunchout?ref=br_tf'><img src='../img/1.png' /></a><a href='https://twitter.com/PartyPunchout'><img src='../img/2.png' /></a><a href='https://www.youtube.com/channel/UCSYtgNVwkavCbPsEwz1UYNw'><img src='../img/3.png' /></a><a href='https://plus.google.com/u/0/115190507198706382011/about'><img src='../img/4.png' /></a></div>");
+	$("#mediaLinks").append("<div id='mediaLinksSlider'><a href='https://www.facebook.com/partypunchout?ref=br_tf'><img src='../img/1.png' /></a><a href='https://twitter.com/PartyPunchoutAp'><img src='../img/2.png' /></a><a href='https://www.youtube.com/channel/UCSYtgNVwkavCbPsEwz1UYNw'><img src='../img/3.png' /></a><a href='https://plus.google.com/u/0/115190507198706382011/about'><img src='../img/4.png' /></a></div>");
 };
 
 var slideTop = function () {
